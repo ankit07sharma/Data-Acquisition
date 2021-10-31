@@ -1,4 +1,4 @@
-# DatabAcquisition
+# Data-Acquisition
 
 The Task of this project is to send the below sensor's data to system.
 ->Light intensity percentage.
