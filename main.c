@@ -1,3 +1,5 @@
+//This is the main function which will call all the driver function here in infinite loop
+
 #include"header.h"
 void main()
 {
