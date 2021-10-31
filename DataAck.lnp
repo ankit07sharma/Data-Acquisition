@@ -1,9 +1,0 @@
-".\Data Ack\STARTUP.obj",
-".\Data Ack\main.obj",
-".\Data Ack\uartDriver.obj",
-".\Data Ack\i2c_frame.obj",
-".\Data Ack\i2cDriver.obj",
-".\Data Ack\ADC_driver.obj",
-".\Data Ack\RTC_driver.obj" 
-TO ".\Data Ack\DataAck" 
-PRINT(".\Listings\DataAck.m51") RAMSIZE(256) 
