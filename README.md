@@ -1,6 +1,6 @@
 # DatabAcquisition
 
-This Task of this project is to send the below sensor's data to system.
+The Task of this project is to send the below sensor's data to system.
 ->Light intensity percentage.
 ->Speedo meter which will tell speed in between 0-120.
 ->output voltage value of potentiometer.
