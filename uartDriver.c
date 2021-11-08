@@ -90,38 +90,21 @@ void uart_tx_int(s16 t)
 //This Function will transmit the float number 
 void uart_tx_float(float t)
 {
-float temp;
-u16 a;
-u16 b=1;
-if(t==0)
+s8 i;
+if(a!=0)
 {
-	uart_tx_string("0.0");
-	return;
-}
-if(t<0)
-{
-uart_tx('-');
-t=-t;
-}	
-a=t;
-uart_tx_int(a);
-uart_tx('.');
-temp=t-a;
-  if(temp>0)
-	while(b)
+	if(a<0)
 	{
-    if(1>(temp*10))
-		a=0;
-    else 
-		a=temp*10;
-		uart_tx(a+48);
-		if(a==0)
-		temp=temp*100;
-		else
-		temp=temp*10-a;
-		if(temp==0.0)
-			b=0;
+		uart_tx('-');
+		a=-a;
 	}
-	else
-		uart_tx(48);
+	i=a;
+	uart_tx_int(i);
+	uart_tx('.');
+	i=(a-i)*10;
+	uart_tx_int(i);
 }
+else
+	uart_tx('0');
+}
+
